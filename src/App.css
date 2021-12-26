@@ -2,6 +2,8 @@
 
 :root {
   --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -9,8 +11,9 @@ body {
 }
 /******************************** Navigation Bar ************************/
 .logo {
-  width: 3.25rem;
-  margin-top: 2rem !important;
+  width: 4.25rem;
+  padding-top: 60px !important;
+  margin-left: 40px;
 }
 
 /********* MENU LINKS ***********/
@@ -27,6 +30,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important ;
+  border-top: 0.1875rem solid var(--primary-dark);
 }
 
 .navbar-brand {
@@ -35,15 +39,26 @@ nav ul li {
   height: 6rem !important;
 }
 
+.language {
+  padding-right: 1rem;
+}
 .language ul {
   color: var(--primary-white) !important;
   font-size: 0.6rem;
   list-style-type: none;
   display: flex;
-  margin-left: 2rem;
 }
 .language li {
-  margin-left: 1rem;
+  padding-left: 1rem;
   margin-top: 1rem;
   cursor: pointer;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
