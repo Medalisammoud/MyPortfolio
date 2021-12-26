@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../Assets/Logo.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const NavBar = ({ setLang, lang }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
@@ -17,7 +20,7 @@ const NavBar = ({ setLang, lang }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
