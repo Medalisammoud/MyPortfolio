@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import Particles from "react-particles-js";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
 function App() {
   const [lang, setLang] = useState(true);
   return (
@@ -31,6 +32,7 @@ function App() {
       /> */}
       <NavBar setLang={setLang} lang={lang} />
       <Header lang={lang} />
+      <AboutMe lang={lang} />
     </div>
   );
 }
