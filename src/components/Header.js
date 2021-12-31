@@ -18,7 +18,7 @@ const Header = ({ lang }) => {
           loop
         />
         <a href="#" className="btn-main-offer">
-          Contact Me
+          {lang ? "Contact Me" : "Contactez moi"}
         </a>
       </div>
     </div>

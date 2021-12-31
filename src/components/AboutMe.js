@@ -1,5 +1,6 @@
 import React from "react";
 import imgProfile from "../Assets/profile.png";
+import myCv from "../Assets/Mohamed Ali Sammoud CV.pdf";
 
 const AboutMe = ({ lang }) => {
   return (
@@ -21,6 +22,13 @@ const AboutMe = ({ lang }) => {
             understanding user needs, to frontend and backend development,
             including maintenance.
           </p>
+          <a
+            href={myCv}
+            className="btn-dow"
+            download="Mohamed Ali Sammoud CV.pdf"
+          >
+            {lang ? "Download" : "Télécharger"}
+          </a>
         </div>
       ) : (
         <div className="aboutText">
